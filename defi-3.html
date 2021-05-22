@@ -1,20 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Défi JS - 01</title>
+    <title>Défi JS - 03</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
@@ -36,30 +26,25 @@
         </div>
 
         <div class="jumbotron">
-            <h1>Defi JS - 01</h1>
-            <p> Créer deux constantes. Une contenant votre nom et une contenant votre prénom. Afficher dans une page web le
-                message suivant : 'Votre nom est ... et votre prénom est ...'</p>
+            <h1>Defi JS - 03</h1>
+            <p>Créer une variable de type Tableau comportant quatre titres de film. À chaque chargement, le script écrit le
+                titre d'un des 4 films dans la page : le titre du film est choisi aléatoirement dans le tableau.</p>
         </div>
         <h2>Résultat</h2>
         <div id="resultat">
 
-            Votre nom est <span id="name"></span>  et votre prénom est <span id="surname"></span>
-
         </div>
-
-        <script>
-         const man ={name:"Dubief", surname:"Gianni"};
-
-         document.getElementById("name").innerHTML = man['name'];
-         document.getElementById("surname").innerHTML = man['surname'];
-
-        </script>
 
     </div>
 
+    <script>
+        var array = ['Le seigneur des anneaux', 'Brice de Nice','Pokemon','Digimon'];
+        var randomArray = array[Math.floor(Math.random() * array.length)];
+
+      document.getElementById('resultat').innerHTML = randomArray;
+    </script>
+
+
 </body>
 
-</html>
-    
-</body>
 </html>

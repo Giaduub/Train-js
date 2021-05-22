@@ -1,20 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <!DOCTYPE html>
 <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Défi JS - 01</title>
+    <title>Défi JS - 04</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
@@ -36,30 +26,30 @@
         </div>
 
         <div class="jumbotron">
-            <h1>Defi JS - 01</h1>
-            <p> Créer deux constantes. Une contenant votre nom et une contenant votre prénom. Afficher dans une page web le
-                message suivant : 'Votre nom est ... et votre prénom est ...'</p>
+            <h1>Defi JS - 04</h1>
+            <p>Créer une variable de type Tableau comportant six capitales d'Europe en minuscule. Faire une boucle qui
+                va
+                parcourir les éléments du tableau et les afficher en Majuscule sur la page.</p>
         </div>
         <h2>Résultat</h2>
         <div id="resultat">
 
-            Votre nom est <span id="name"></span>  et votre prénom est <span id="surname"></span>
-
         </div>
 
-        <script>
-         const man ={name:"Dubief", surname:"Gianni"};
+        <script> 
+        var capital = ['Paris','Berlin','Rome','Londres','Porto','Bruxelles'];
+        var resultat = ""
+        
+        let i 
+        for(i = 0; i< capital.length; i++) {
+            resultat += "<li>" +capital[i].toUpperCase()+"</li>";
+        }
 
-         document.getElementById("name").innerHTML = man['name'];
-         document.getElementById("surname").innerHTML = man['surname'];
-
+        document.getElementById('resultat').innerHTML = resultat;
         </script>
 
     </div>
 
 </body>
 
-</html>
-    
-</body>
 </html>
